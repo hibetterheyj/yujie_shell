@@ -1,4 +1,4 @@
-# git alias
+## git alias
 # https://github.com/davidoort/setup/blob/master/ubuntu/files/.aliases
 alias gs="git status"
 alias push="git push"
@@ -9,8 +9,24 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gd="git diff"
 alias ga="git add -A"
 alias gc="git commit -m "
+alias gsoft="git reset --soft "
 
-# other alias
+## other alias
 alias rosws="echo $ROS_PACKAGE_PATH"
 alias rc="vi ~/.bashrc && source ~/.bashrc" # open bashrc and source
 mkcd() { mkdir -p "$@" && cd "$@"; }
+
+# https://www.zhihu.com/question/22636025/answer/680066976
+# 好用的gpu监控工具，彩色版的nvidia-smi，命令有点长，果断alias
+alias gpus='gpustat -cpui'
+# reload bash 重新载入bash
+alias rl='exec bash'
+
+## Test
+alias ..="cd .."
+# https://askubuntu.com/a/184398
+# xclip : Can't open display: (null), issue: https://github.com/microsoft/WSL/issues/4933
+# xsel : Can't open display: (null), : Inappropriate ioctl for device
+# alias copy='xclip -sel clip'
+# inspired by https://www.zhihu.com/question/21418449/answer/91817026
+# alias gcid="git log | head -1 | awk '{print substr(\$2,1,7)}' | copy"

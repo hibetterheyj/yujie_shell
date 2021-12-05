@@ -31,6 +31,9 @@ check_install tmux
 # htop
 check_install htop
 
+# gpustat
+check_install gpustat
+
 # ffmpeg
 check_install ffmpeg
 echo "Video Generation Test from https://www.bogotobogo.com/FFMpeg/ffmpeg_video_test_patterns_src.php"
