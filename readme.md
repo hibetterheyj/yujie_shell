@@ -47,4 +47,11 @@
 
 ## Misc.
 
+### Reference
+
+- [UsingTheTerminal](https://help.ubuntu.com/community/UsingTheTerminal)
+- [My bookmarked Shell Q&A](https://www.notion.so/yujiehe/Shell-scripts-Q-A-fb3ebb4dcf1b42bf8a99fb0a52241e60)
+
+### Extension
+
 - [shell-format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format) extension for VS Code
