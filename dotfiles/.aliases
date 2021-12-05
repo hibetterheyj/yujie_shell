@@ -1,0 +1,16 @@
+# git alias
+# https://github.com/davidoort/setup/blob/master/ubuntu/files/.aliases
+alias gs="git status"
+alias push="git push"
+alias pull="git pull"
+alias checkout="git checkout"
+# https://sweetme.at/2013/09/13/git-logs-with-color/
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias gd="git diff"
+alias ga="git add -A"
+alias gc="git commit -m "
+
+# other alias
+alias rosws="echo $ROS_PACKAGE_PATH"
+alias rc="vi ~/.bashrc && source ~/.bashrc" # open bashrc and source
+mkcd() { mkdir -p "$@" && cd "$@"; }
