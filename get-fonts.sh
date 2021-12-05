@@ -19,6 +19,14 @@ sudo mkdir $myfonts_dir 2>/dev/null
 echo "Ubuntu字体自动安装工具"
 echo "(C)2008-2009 Deng.Yangjun@Gmail.com"
 
+echo "modified by Yujie He"
+unzip_installed=$(dpkg-query -W unzip | grep unzip | wc -l)
+if [ "$unzip_installed" = 0 ] ; then
+    # echo 'Be careful not to fall off!'
+    echo "unzip is not installed"
+	suao apt install unzip
+fi
+
 echo "安装等宽英文台字体:Monaco"
 wget -O $monaco.zip $remote_dir/$monaco.zip
 unzip -o $monaco.zip 1>/dev/null
@@ -59,17 +67,17 @@ rm $msyhbd.zip
 #sudo mv language-selector.conf /etc/fonts
 #rm language-selector.conf.zip
 
-#Ubuntu 8.04 
+#Ubuntu 8.04
 echo "请选择显示器类型(1-2)：1-LED	2-CRT"
 read screen
 case $screen in
-1) 
+1)
 	wget -O local.conf.zip  $remote_dir/local.conf.led.zip
 	;;
-2)	
+2)
 	wget -O local.conf.zip  $remote_dir/local.conf.crt.zip
 	;;
-?) 
+?)
 	echo "无效选择，退出安装，安装未完成。"
 	exit 1;
 esac
