@@ -1,6 +1,12 @@
 #!/bin/bash
-# parse command line arguments in Bash
-# derived from https://stackoverflow.com/a/14203146/7961693
+
+# File      :  conda_pipeline.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Tested
+# Reference :  xxx
+
 # Example:
 # > sh conda_pipeline.sh -e=test -t=test
 # CONDA ENVIRONMENT  = test

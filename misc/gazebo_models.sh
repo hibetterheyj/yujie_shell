@@ -1,4 +1,11 @@
-#!/bin/sh
+#!/bin/bash
+
+# File      :  gazebo_models.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Tested
+# Reference :  xxx
 
 #TODO: add code to check if $HOME/.gazebo/models/ exists
 
