@@ -1,3 +1,5 @@
+# derived from https://gist.github.com/arose13/fcc1d2d5ad67503ba9842ea64f6bac35
+
 # Setup Ubuntu
 sudo apt update --yes
 sudo apt upgrade --yes
@@ -7,4 +9,7 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/
 bash ~/miniconda.sh -b -p ~/miniconda
 rm ~/miniconda.sh
 
-export PATH=~/miniconda/bin:$PATH
+# export PATH=~/miniconda/bin:$PATH
+conda init bash
+# https://stackoverflow.com/questions/54429210/how-do-i-prevent-conda-from-activating-the-base-environment-by-default
+conda config --set auto_activate_base false

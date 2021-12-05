@@ -4,7 +4,6 @@
 # ref:
 #   ROS variants: https://www.ros.org/reps/rep-0142.html#id7
 
-#!/bin/bash
 set -e
 set -x
 
