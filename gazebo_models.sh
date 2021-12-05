@@ -9,8 +9,7 @@ wget -l 2 -nc -r "http://models.gazebosim.org/" --accept gz
 cd "models.gazebosim.org"
 
 # Extract all model archives
-for i in *
-do
+for i in *; do
   tar -zvxf "$i/model.tar.gz"
 done
 

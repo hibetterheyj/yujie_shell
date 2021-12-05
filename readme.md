@@ -44,3 +44,7 @@
 ### ubuntu arm64/aarch64 with gui
 
 🚧
+
+## Misc.
+
+- [shell-format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format) extension for VS Code

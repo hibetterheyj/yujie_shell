@@ -21,9 +21,9 @@ echo "(C)2008-2009 Deng.Yangjun@Gmail.com"
 
 echo "modified by Yujie He"
 unzip_installed=$(dpkg-query -W unzip | grep unzip | wc -l)
-if [ "$unzip_installed" = 0 ] ; then
-    # echo 'Be careful not to fall off!'
-    echo "unzip is not installed"
+if [ "$unzip_installed" = 0 ]; then
+	# echo 'Be careful not to fall off!'
+	echo "unzip is not installed"
 	suao apt install unzip
 fi
 
@@ -72,14 +72,15 @@ echo "请选择显示器类型(1-2)：1-LED	2-CRT"
 read screen
 case $screen in
 1)
-	wget -O local.conf.zip  $remote_dir/local.conf.led.zip
+	wget -O local.conf.zip $remote_dir/local.conf.led.zip
 	;;
 2)
-	wget -O local.conf.zip  $remote_dir/local.conf.crt.zip
+	wget -O local.conf.zip $remote_dir/local.conf.crt.zip
 	;;
 ?)
 	echo "无效选择，退出安装，安装未完成。"
-	exit 1;
+	exit 1
+	;;
 esac
 
 unzip -o local.conf.zip 1>/dev/null
@@ -98,4 +99,3 @@ sudo mkfontdir 1>/dev/null
 sudo fc-cache -v 1>/dev/null
 
 echo "安装字体结束，谢谢使用。请退出X-Server，重新登录，查看字体效果。"
-
