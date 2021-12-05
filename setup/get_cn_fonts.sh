@@ -20,12 +20,8 @@ echo "Ubuntu字体自动安装工具"
 echo "(C)2008-2009 Deng.Yangjun@Gmail.com"
 
 echo "modified by Yujie He"
-unzip_installed=$(dpkg-query -W unzip | grep unzip | wc -l)
-if [ "$unzip_installed" = 0 ]; then
-	# echo 'Be careful not to fall off!'
-	echo "unzip is not installed"
-	suao apt install unzip
-fi
+source ./scriptutils.sh
+check_install unzip
 
 echo "安装等宽英文台字体:Monaco"
 wget -O $monaco.zip $remote_dir/$monaco.zip

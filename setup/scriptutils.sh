@@ -14,7 +14,16 @@ askConfirmation() {
 isInstalled() {
 	dpkg-query -W -f='${Status}' $1 2>/dev/null | grep -q -c "ok installed"
 }
-dpkg-query -W unzip | grep -q -c "ok installed"
+
+check_install() {
+	if isInstalled "$@"; then
+		echo "Skipping installation of ($@) because it is already installed."
+	else
+		echo "($@) not installed."
+		echo "Installing git ..."
+		sudo apt install "$@" -y
+	fi
+}
 
 tmp() {
 	export PREV_DIR=$(pwd)
