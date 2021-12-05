@@ -7,13 +7,20 @@
 # State     :  Deployed
 # Reference :  -
 
+ABSPATH=$(realpath $0)
+SETUPDIR=$(dirname $ABSPATH)
+
 # customised dotfiles
-ln -s ~/yujie_shell/dotfiles/.aliases ~/.aliases
+echo "adding .aliases"
+ln -sf "${SETUPDIR}/../dotfiles/.aliases" ~/.aliases
 
 # additional settings in bashrc
+echo "appending .bashrc_extras"
 echo -e "\n" >>~/.bashrc
-cat ~/yujie_shell/dotfiles/.bashrc_extras >>~/.bashrc
+cat "${SETUPDIR}/../dotfiles/.bashrc_extras" >>~/.bashrc
+source ~/.bashrc
 
 # incremental history searching
 # https://codeinthehole.com/tips/the-most-important-command-line-tip-incremental-history-searching-with-inputrc/
-ln -s ~/yujie_shell/dotfiles/.inputrc ~/.inputrc
+echo "adding .inputrc"
+ln -sf "${SETUPDIR}/../dotfiles/.inputrc" ~/.inputrc
