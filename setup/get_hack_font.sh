@@ -1,4 +1,13 @@
 #!/bin/bash
+
+# File      :  get_hack_font.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Deployed
+# Reference :  -
+
+#!/bin/bash
 set -e
 set -x
 

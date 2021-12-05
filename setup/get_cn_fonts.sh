@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# File      :  get_cn_fonts.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Deployed
+# Reference :  https://gist.github.com/lwjef/1361660
+
 #dir define
 myfonts_dir=/usr/share/fonts/truetype/myfonts
 remote_dir=http://files.cnblogs.com/DengYangjun

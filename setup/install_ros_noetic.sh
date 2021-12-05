@@ -1,5 +1,11 @@
 #!/bin/bash
-# derived from https://github.com/davidoort/setup/blob/master/ubuntu/scripts/robotics.sh
+
+# File      :  install_ros_noetic.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Deployed
+# Reference :  https://github.com/davidoort/setup/blob/master/ubuntu/scripts/robotics.sh
 
 # ref:
 #   ROS variants: https://www.ros.org/reps/rep-0142.html#id7
@@ -49,7 +55,7 @@ source ~/.bashrc
 
 echo "#### Dependencies for building packages"
 python -m pip install --upgrade pip
-sudo apt install python3-rosdep python3-rosinstall \
+sudo apt install -y python3-rosdep python3-rosinstall \
     python3-rosinstall-generator python3-wstool build-essential
 
 echo "#### Initialize rosdep"
@@ -58,4 +64,4 @@ rosdep update
 
 # https://catkin-tools.readthedocs.io/en/latest/installing.html
 echo "#### Initialize catkin_tools"
-sudo apt-get install python3-catkin-tools
+sudo apt-get install -y python3-catkin-tools

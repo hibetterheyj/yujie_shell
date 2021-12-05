@@ -1,4 +1,12 @@
-# borrow from https://github.com/davidoort/setup/blob/master/ubuntu/utils/scriptutils.sh
+#!/bin/bash
+
+# File      :  scriptutils.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Deployed
+# Reference :  https://github.com/davidoort/setup/blob/master/ubuntu/utils/scriptutils.sh
+
 # Asks a yes/no question to a user.
 # Returns success (0) if the user confirms and error (1) if the user cancels.
 # If the script is run non-interactively success (0) is returned.
@@ -21,6 +29,7 @@ check_install() {
 	else
 		echo "($@) not installed."
 		echo "Installing git ..."
+		# -y, --yes, --assume-yes, Automatic yes to prompts
 		sudo apt install "$@" -y
 	fi
 }

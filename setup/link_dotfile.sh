@@ -1,3 +1,12 @@
+#!/bin/bash
+
+# File      :  link_dotfile.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Deployed
+# Reference :  -
+
 # customised dotfiles
 ln -s ~/yujie_shell/dotfiles/.aliases ~/.aliases
 

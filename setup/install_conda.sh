@@ -1,4 +1,11 @@
-# derived from https://gist.github.com/arose13/fcc1d2d5ad67503ba9842ea64f6bac35
+#!/bin/bash
+
+# File      :  install_conda.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Deployed
+# Reference :  https://gist.github.com/arose13/fcc1d2d5ad67503ba9842ea64f6bac35
 
 # Setup Ubuntu
 sudo apt update --yes

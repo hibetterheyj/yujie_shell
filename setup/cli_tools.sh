@@ -1,4 +1,11 @@
-sudo apt update
+#!/bin/bash
+
+# File      :  cli_tools.sh
+# Time      :  2021/12/05
+# Author    :  Yujie He
+# Contact   :  he-yujie@outlook.com
+# State     :  Deployed
+# Reference :  -
 
 # Exit immediately if a command exits with a non-zero exit status.
 # set -e
@@ -6,6 +13,8 @@ sudo apt update
 set -x
 
 source ./scriptutils.sh
+
+sudo apt update
 
 # git
 check_install git
