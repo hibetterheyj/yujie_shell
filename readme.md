@@ -1,49 +1,53 @@
 # yujie_shell
 
-- `get-fonts.sh`: download additional fonts for ubuntu
-
-- `gazebo_models.sh`: download models for gazebo
-    - TODO: add code to check if $HOME/.gazebo/models/ exists
-    - source: [2018-01-05:如何下载Gazebo模型并安装](https://www.jianshu.com/p/ca229733c22a)
-
-## setup scripts
+## Setup scripts for Ubuntu
 
 > ideas from <https://github.com/davidoort/setup>, an automated way of setting up my workstation on macOS or Ubuntu after a reinstall of the OS by David Oort Alonso
 
-<details>
+### Current support
+
+<details open>
     <summary><b>included apps</b></summary>
         <div align="left">
-            <ul>
-                <li>Chrome</li>
-            </ul>
+            Chrome, Terminator, Typora, Zoom
         </div>
 </details>
 
-<details>
+<details open>
     <summary><b>included dev tools</b></summary>
         <div align="left">
-            <ul>
-                <li>VS code</li>
-            </ul>
+            VS code, miniconda, ROS
         </div>
 </details>
 
-### dotfiles
+<details open>
+    <summary><b>included command line tools (CLI)</b></summary>
+        <div align="left">
+            git, unzip, tldr, tmux, htop, ffmpeg
+        </div>
+</details>
 
-- `.aliases`
-- `.condarc`
-- `.bashrc`: 🚧
-- `.zshrc`: 🚧
+<details open>
+    <summary><b>included dotfiles</b></summary>
+        <div align="left">
+            `.bashrc_extras` (amendment to original bashrc), `.aliases` (customised alias), `.inputrc` (incremental history searching), `.condarc` (conda config)
+        </div>
+</details>
 
-### ubuntu with/without gui
+### scripts
 
-- `install-conda.sh`: Install Miniconda in Ubuntu
+- `cli_tools.sh`: download command line tools
+- `get_hack_font.sh`: download and configue [Hack font](https://github.com/source-foundry/Hack)
+- `get_cn_fonts.sh`: download and configure additional English-Chinese fonts
+- `install_ros_noetic.sh`: download and configure ROS dev environment and tools
+- `install-conda.sh`: download and configure Miniconda
+- `link_dotfile.sh`: configure dotfiles for bash, conda, inputsc, etc.
+- `scriptutils.sh`: utilitie functions used in other setup scripts
 
-    https://gist.github.com/arose13/fcc1d2d5ad67503ba9842ea64f6bac35
+## Other scripts
 
-### ubuntu arm64/aarch64 with gui
-
-🚧
+- [`conda_pipeline.sh`](./misc/conda_pipeline.sh)
+- [`parse_yml_test.sh`](./misc/yaml/parse_yml_test.sh)
 
 ## Misc.
 
