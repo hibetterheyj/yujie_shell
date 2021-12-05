@@ -59,3 +59,7 @@
 ### Extension
 
 - [shell-format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format) extension for VS Code
+
+### Snippets
+
+- [`shellscritp.json`](./shellscritp.json)
