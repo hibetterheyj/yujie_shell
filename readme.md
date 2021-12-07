@@ -1,6 +1,9 @@
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 # yujie_shell
 
-## Setup scripts for Ubuntu
+## Setup scripts for Ubuntu (bash)
 
 > ideas from <https://github.com/davidoort/setup>, an automated way of setting up my workstation on macOS or Ubuntu after a reinstall of the OS by David Oort Alonso
 
@@ -44,13 +47,6 @@
 - `link_dotfile.sh`: configure dotfiles for bash, conda, inputsc, etc.
 - `scriptutils.sh`: utilitie functions used in other setup scripts
 
-## Other scripts
-
-- [`conda_pipeline.sh`](./misc/conda_pipeline.sh)
-- [`parse_yml_test.sh`](./misc/yaml/parse_yml_test.sh)
-
-## Misc.
-
 ### Reference
 
 - [UsingTheTerminal](https://help.ubuntu.com/community/UsingTheTerminal)
@@ -63,3 +59,23 @@
 ### Snippets
 
 - [`shellscritp.json`](./shellscritp.json)
+
+
+
+## Other scripts
+
+- [`conda_pipeline.sh`](./misc/conda_pipeline.sh)
+- [`parse_yml_test.sh`](./misc/yaml/parse_yml_test.sh)
+
+
+
+## Setup scripts for Windows (Powershell with scoop)
+
+:construction:
+
+### Reference
+
+- [Ash258](https://github.com/Ash258)/**[Scoop-Core](https://github.com/Ash258/Scoop-Core)**: Shovel. Alternative, more advanced, and user-friendly implementation of windows command-line installer scoop.
+- [ivaquero](https://github.com/ivaquero)/**[scoopet](https://github.com/ivaquero/scoopet)**: A Scoop bucket for facilitating academic research.
+  - [搭建 Windows 统一开发环境（Scoop） - zhihu](https://zhuanlan.zhihu.com/p/128955118)
+  - [Scoop 进阶 - 建立自己的Bucket - zhihu](https://zhuanlan.zhihu.com/p/165635039)
