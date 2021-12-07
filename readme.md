@@ -1,5 +1,18 @@
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [yujie_shell](#yujie_shell)
+  - [Setup scripts for Ubuntu (bash)](#setup-scripts-for-ubuntu-bash)
+    - [Current supported software & CLI](#current-supported-software--cli)
+    - [Detailed bash scripts](#detailed-bash-scripts)
+    - [Reference for Ubuntu setup](#reference-for-ubuntu-setup)
+    - [Snippets & Extension used in VS Code](#snippets--extension-used-in-vs-code)
+  - [Other bash scripts](#other-bash-scripts)
+  - [Setup scripts for Windows (Powershell with scoop)](#setup-scripts-for-windows-powershell-with-scoop)
+    - [Reference for Win setup](#reference-for-win-setup)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # yujie_shell
 
