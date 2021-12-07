@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [yujie_shell](#yujie_shell)
+  - [Setup scripts for Ubuntu](#setup-scripts-for-ubuntu)
+    - [Current support](#current-support)
+    - [scripts](#scripts)
+  - [Other scripts](#other-scripts)
+  - [Misc.](#misc)
+    - [Reference](#reference)
+    - [Extension](#extension)
+    - [Snippets](#snippets)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # yujie_shell
 
 ## Setup scripts for Ubuntu
