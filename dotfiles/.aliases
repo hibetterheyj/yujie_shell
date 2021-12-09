@@ -1,3 +1,6 @@
+## list
+alias ll="ls -ahlF"
+
 ## git alias
 # https://github.com/davidoort/setup/blob/master/ubuntu/files/.aliases
 alias gs="git status"
@@ -14,7 +17,6 @@ alias gsoft="git reset --soft "
 ## other alias
 alias rosws="echo $ROS_PACKAGE_PATH"
 alias rc="vi ~/.bashrc && source ~/.bashrc" # open bashrc and source
-mkcd() { mkdir -p "$@" && cd "$@"; }
 
 # https://www.zhihu.com/question/22636025/answer/680066976
 # 好用的gpu监控工具，彩色版的nvidia-smi，命令有点长，果断alias
@@ -30,3 +32,32 @@ alias ..="cd .."
 # alias copy='xclip -sel clip'
 # inspired by https://www.zhihu.com/question/21418449/answer/91817026
 # alias gcid="git log | head -1 | awk '{print substr(\$2,1,7)}' | copy"
+
+## utility function
+mkcd() { mkdir -p "$@" && cd "$@"; }
+
+# https://stackoverflow.com/a/53286129
+backupfolder() { tar -zcvf "${1}_$(date '+%Y-%m-%d').tar.gz" "$1"; }
+
+# https://gist.github.com/jacius/202439
+# https://superuser.com/questions/43891/map-untar-to-tar-xvfz
+decompress() {
+    if [ -f $1 ]; then
+        case $1 in
+        *.tar.bz2) tar xvjf $1 ;;
+        *.tar.gz) tar xvzf $1 ;;
+        *.bz2) bunzip2 $1 ;;
+        *.rar) unrar x $1 ;;
+        *.gz) gunzip $1 ;;
+        *.tar) tar xvf $1 ;;
+        *.tbz2) tar xvjf $1 ;;
+        *.tgz) tar xvzf $1 ;;
+        *.zip) unzip $1 ;;
+        *.Z) uncompress $1 ;;
+        *.7z) 7z x $1 ;;
+        *) echo "Unable to extract '$1'" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
