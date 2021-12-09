@@ -28,7 +28,6 @@ check_install() {
 		echo "Skipping installation of ($@) because it is already installed."
 	else
 		echo "($@) not installed."
-		echo "Installing git ..."
 		# -y, --yes, --assume-yes, Automatic yes to prompts
 		sudo apt install "$@" -y
 	fi
