@@ -39,6 +39,9 @@ mkcd() { mkdir -p "$@" && cd "$@"; }
 # https://stackoverflow.com/a/53286129
 backupfolder() { tar -zcvf "${1}_$(date '+%Y-%m-%d').tar.gz" "$1"; }
 
+# https://askubuntu.com/a/563366
+subsize() { du -hsc "$@" | sort -hr; }
+
 # https://gist.github.com/jacius/202439
 # https://superuser.com/questions/43891/map-untar-to-tar-xvfz
 decompress() {
