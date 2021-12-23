@@ -60,10 +60,21 @@
 - `link_dotfile.sh`: configure dotfiles for bash, conda, inputsc, etc.
 - `scriptutils.sh`: utilitie functions used in other setup scripts
 
+### Ideas to be continued!
+
+- Using GitHub Actions to check the installation correctness
+- Use developed software to manage font installation
+
 ### Reference for Ubuntu setup
 
 - [UsingTheTerminal](https://help.ubuntu.com/community/UsingTheTerminal)
 - [My bookmarked Shell Q&A](https://www.notion.so/yujiehe/Shell-scripts-Q-A-fb3ebb4dcf1b42bf8a99fb0a52241e60)
+- repos:
+    - https://github.com/theniceboy/.config
+        提及到字体安装
+    - https://github.com/theniceboy/scripts
+    - https://github.com/theniceboy/nvim
+    - https://github.com/davidoort/setup
 
 ### Snippets & Extension used in VS Code
 
