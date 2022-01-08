@@ -1,7 +1,7 @@
 # shorten shown current directory path: https://unix.stackexchange.com/a/393834
 PROMPT_DIRTRIM=1
 
-# for longer hisoty
+# for longer history
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000000
 
