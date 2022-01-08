@@ -75,6 +75,9 @@
     - https://github.com/theniceboy/scripts
     - https://github.com/theniceboy/nvim
     - https://github.com/davidoort/setup
+- Fonts with icon: https://www.nerdfonts.com/
+- Script to backup robot environment: https://github.com/clearpathrobotics/robot-backup
+- Config scripts for Ubuntu: https://github.com/HoEmpire/ubuntu18.04-config-script
 
 ### Snippets & Extension used in VS Code
 
