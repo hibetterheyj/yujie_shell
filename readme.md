@@ -6,6 +6,7 @@
   - [Setup scripts for Ubuntu (bash)](#setup-scripts-for-ubuntu-bash)
     - [Current supported software & CLI](#current-supported-software--cli)
     - [Detailed bash scripts](#detailed-bash-scripts)
+    - [Ideas to be continued!](#ideas-to-be-continued)
     - [Reference for Ubuntu setup](#reference-for-ubuntu-setup)
     - [Snippets & Extension used in VS Code](#snippets--extension-used-in-vs-code)
   - [Other bash scripts](#other-bash-scripts)
