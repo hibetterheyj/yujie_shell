@@ -12,6 +12,9 @@ set -x
 
 source setup/ubuntu/utils/scriptutils.sh
 
+# clipboard manager: copyq
+check_install copyq
+
 # Chrome
 if isInstalled "google-chrome-stable"; then
     echo "Skipping installation of google-chrome because it is already installed."
@@ -45,13 +48,17 @@ else
     sudo apt-get install -y openconnect network-manager-openconnect network-manager-openconnect-gnome
 fi
 
-# TODO: Kazam
+# Kazam: screen recording
+check_install kazam
+
+# OBS Studio
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install obs-studio -y
+
 # OpenConnect
-if isInstalled "kazam"; then
-    echo "Skipping installation of kazam because it is already installed."
-else
-    sudo apt-get install kazam
-fi
+check_install openconnect
 
 # TODO: Typora
+# need activation code
 # https://download.typora.io/linux/typora_0.11.18_amd64.deb

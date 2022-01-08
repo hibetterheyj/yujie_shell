@@ -44,8 +44,8 @@ check_install ffmpeg
 echo "Video Generation Test from https://www.bogotobogo.com/FFMpeg/ffmpeg_video_test_patterns_src.php"
 echo "ffmpeg -f lavfi -i testsrc=duration=5.3:size=qcif:rate=10 testsrc2.mp4"
 
-# clipboard manager: copyq
-check_install copyq
+# tree
+check_install tree
 
 # trash-cli
 # https://github.com/andreafrancia/trash-cli
