@@ -60,11 +60,13 @@
 - `install-conda.sh`: download and configure Miniconda
 - `link_dotfile.sh`: configure dotfiles for bash, conda, inputsc, etc.
 - `scriptutils.sh`: utilitie functions used in other setup scripts
+- `git_config.sh`: config personal github globally
 
 ### Ideas to be continued!
 
 - Using GitHub Actions to check the installation correctness
 - Use developed software to manage font installation
+- Config git to local dir
 
 ### Reference for Ubuntu setup
 
