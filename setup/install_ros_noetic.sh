@@ -54,7 +54,8 @@ source ~/.bashrc
 # source /opt/ros/melodic/setup.bash
 
 echo "#### Dependencies for building packages"
-python -m pip install --upgrade pip
+# default is `python3` without `python`` installed
+python3 -m pip install --upgrade pip
 sudo apt install -y python3-rosdep python3-rosinstall \
     python3-rosinstall-generator python3-wstool build-essential
 
