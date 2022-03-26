@@ -17,6 +17,7 @@ bash ~/miniconda.sh -b -p ~/miniconda
 rm ~/miniconda.sh
 
 # export PATH=~/miniconda/bin:$PATH
+source ~/miniconda/etc/profile.d/conda.sh
 conda init bash
 # https://stackoverflow.com/questions/54429210/how-do-i-prevent-conda-from-activating-the-base-environment-by-default
 conda config --set auto_activate_base false

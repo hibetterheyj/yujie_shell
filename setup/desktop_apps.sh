@@ -10,7 +10,7 @@
 set -e
 set -x
 
-source setup/ubuntu/utils/scriptutils.sh
+source ./scriptutils.sh
 
 # clipboard manager: copyq
 check_install copyq
@@ -40,6 +40,7 @@ fi
 # Zoom
 wget https://zoom.us/client/latest/zoom_amd64.deb
 sudo apt install ./zoom_amd64.deb -y
+rm -rf zoom_amd64.deb
 
 # OpenConnect
 if isInstalled "openconnect"; then
@@ -52,13 +53,12 @@ fi
 check_install kazam
 
 # OBS Studio
+# TODO: replace with portable version
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt update
 sudo apt install obs-studio -y
 
-# OpenConnect
-check_install openconnect
-
 # TODO: Typora
 # need activation code
 # https://download.typora.io/linux/typora_0.11.18_amd64.deb
+
