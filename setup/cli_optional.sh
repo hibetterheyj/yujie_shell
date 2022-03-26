@@ -25,8 +25,14 @@ rm -rf ~/diskonaut*.tar.gz
 # youtube-dl
 # sudo -H pip install --upgrade youtube-dl
 
+# starship
+# https://starship.rs/
+# sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+# echo 'eval "$(starship init bash)"' >>~/.bashrc
+
 # https://github.com/jarun/nnn
 # https://github.com/ranger/ranger (.tar.gz or pip)
 # https://github.com/jhotmann/node-rename-cli (npm)
 # https://github.com/kefranabg/readme-md-generator (npx)
 # https://github.com/agarrharr/awesome-cli-apps
+

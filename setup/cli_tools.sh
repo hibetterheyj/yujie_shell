@@ -51,10 +51,9 @@ check_install tree
 # https://github.com/andreafrancia/trash-cli
 check_install trash-cli
 
-# starship
-# https://starship.rs/
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-echo 'eval "$(starship init bash)"' >>~/.bashrc
+# curl
+check_install curl
 
 # vim
-# sudo apt install vim -y
+check_install vim
+
