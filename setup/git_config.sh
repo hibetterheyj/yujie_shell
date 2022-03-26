@@ -16,3 +16,4 @@ git config -l
 
 echo "Generate SSH key for GitHub"
 ssh-keygen
+cat ~/.ssh/id_rsa.pub
