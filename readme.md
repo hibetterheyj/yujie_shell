@@ -6,6 +6,8 @@
   - [Setup scripts for Ubuntu (bash)](#setup-scripts-for-ubuntu-bash)
     - [Current supported software & CLI](#current-supported-software--cli)
     - [Detailed bash scripts](#detailed-bash-scripts)
+      - [Personal](#personal)
+      - [External](#external)
     - [Ideas to be continued!](#ideas-to-be-continued)
     - [Reference for Ubuntu setup](#reference-for-ubuntu-setup)
     - [Snippets & Extension used in VS Code](#snippets--extension-used-in-vs-code)
@@ -53,6 +55,8 @@
 
 ### Detailed bash scripts
 
+#### Personal
+
 - `cli_tools.sh`: download command line tools
 - `get_hack_font.sh`: download and configue [Hack font](https://github.com/source-foundry/Hack)
 - `get_cn_fonts.sh`: download and configure additional English-Chinese fonts
@@ -61,6 +65,10 @@
 - `link_dotfile.sh`: configure dotfiles for bash, conda, inputsc, etc.
 - `scriptutils.sh`: utilitie functions used in other setup scripts
 - `git_config.sh`: config personal github globally
+
+#### External
+
+- [`cuda_11.2_installation_on_Ubuntu_20.04`](https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73)
 
 ### Ideas to be continued!
 

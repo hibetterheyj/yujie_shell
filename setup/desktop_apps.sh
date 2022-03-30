@@ -12,6 +12,9 @@ set -x
 
 source ./scriptutils.sh
 
+# file transfer
+check_install filezilla
+
 # clipboard manager: copyq
 check_install copyq
 
