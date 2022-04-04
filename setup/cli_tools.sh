@@ -47,6 +47,9 @@ echo "ffmpeg -f lavfi -i testsrc=duration=5.3:size=qcif:rate=10 testsrc2.mp4"
 # tree
 check_install tree
 
+# mlocate (locate)
+check_install mlocate
+
 # trash-cli
 # https://github.com/andreafrancia/trash-cli
 check_install trash-cli
@@ -56,4 +59,3 @@ check_install curl
 
 # vim
 check_install vim
-

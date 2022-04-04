@@ -75,6 +75,7 @@
 - Using GitHub Actions to check the installation correctness
 - Use developed software to manage font installation
 - Config git to local dir
+- Add Pinyin support: <https://zhuanlan.zhihu.com/p/109317949>
 
 ### Reference for Ubuntu setup
 
